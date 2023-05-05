@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Pangram NeueLight';
+    src: url('./assets/PPNeueMachina-InktrapLight.otf') format('opentype');
+    font-weight: 100;
+  }
+
+ @font-face {
+    font-family: 'Pangram Neue';
+    src: url('./assets/PPNeueMachina-InktrapRegular.otf') format('opentype');
+    font-weight: 100;
+  }
+
+ canvas{
+  left:calc(50%-200px);
+  top:calc(50vh-200px);
+  position:relative;
+ } 
+
+  h1{
+    font-family: 'Pangram Neue', Times;
+  }
+
+  body {
+
+     max-width: 1200px;
+     margin: 0 auto;
+     margin-top: 4%;
+     height: 100%;
+     color: white;
+     display: block;
+     box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
+     font-family: 'Pangram Neue', Times;
+     /*background-image: url('./assets/layout.png');*/
+     background-color: black;
+     background-size: 100%;
+     
+  }
+
+  p{
+    font-family: 'Pangram Neue', Times;
+    font-size:24px;
+    color: #a1a0ba;
+  }
+
+  button {
+    font-family: 'Pangram Neue', Times;
+    font-style: italic;
+    color: white;
+    border-radius: 15px;
+    background-color: #628494;
+  }
+
+  a{
+    font-family: 'Pangram Neue', Times;
+    font-size:24px;
+    color: white;
+  }
+
+  a:hover {
+    color: aqua;
+  }
+
+  input[type=text] {
+    font-family: 'Pangram Neue', Times;
+    font-size: medium;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
