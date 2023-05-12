@@ -16,7 +16,7 @@
         <br><br><br><h1>[Find out your procrastination personality]</h1> <br>
 
         <p>1. How often do you find yourself procrastinating? </p>
-        <form>
+        <form id="form1">
             <input type="radio" class="radio" name="ques1" value="option1">
             <label for="option1">Always</label><br>
             <input type="radio" class="radio" name="ques1" value="option2">
@@ -26,20 +26,20 @@
         </form>
 
         <p>2. What's the longest you've ever procrastinated on a task before actually doing it?</p>
-        <form>
+        <form id="form2">
             <input type="radio" class="radio" name="ques2" value="option1">
-            <label for="option1">What do you mean longest? I never stopped procrastinating</label><br>
+            <label for="option1">A week</label><br>
             <input type="radio" class="radio" name="ques2" value="option2">
             <label for="option2"> 20 minutes </label><br>
             <input type="radio" class="radio" name="ques2" value="option3">
-            <label for="option3">A week</label>
+            <label for="option3">What do you mean longest? I never stopped procrastinating</label>
         </form> 
         <a href="#section03"><span></span></a>
     </section> 
     <section id="section03" class="scroll">
             <br><br><br>
             <p>3. If you were in a fictional realm in which you could procrastinate forever, what would you do ?</p>
-            <form>
+            <form id="form3">
                 <input type="radio" class="radio" name="ques3" value="option1">
                 <label for="option1">Avoid responsibilities and tasks indefinitely</label><br>
                 <input type="radio" class="radio" name="ques3" value="option2">
@@ -48,29 +48,54 @@
                 <label for="option3"> Binge watch tv and shows</label>
             </form> 
             <p>4. In this fictional realm, What would your catchphrase be as you go into procrastination?</p>
+            <form id="form4">
+                <input type="radio" class="radio" name="ques4" value="option1">
+                <label for="option1">Perfection takes time, and so does procrastination</label><br>
+                <input type="radio" class="radio" name="ques4" value="option2">
+                <label for="option2"> Nothing gets me as motivated as a crisis waiting to happen </label><br>
+                <input type="radio" class="radio" name="ques4" value="option3">
+                <label for="option3"> I do what I want to do </label>
+                <input type="radio" class="radio" name="ques4" value="option3">
+                <label for="option4"> Overthinking is where I shine </label>
+                <input type="radio" class="radio" name="ques4" value="option3">
+                <label for="option5"> Overthinking is where I shine </label>
+                <input type="radio" class="radio" name="ques4" value="option3">
+                <label for="option6"> But first I need to make a to-do list </label>
+            </form> 
             <a href="#section04"> <span></span></a>
     </section>
     <section id="section04" class="scroll">
         <br><br><br>
         <p>5. When facing a large task or project, what is your usual approach?</p>
-            <form>
+            <form id="form5">
                 <input type="radio" class="radio" name="ques5" value="option1">
-                <label for="option1">A week</label><br>
+                <label for="option1"> Think about it for a while</label><br>
                 <input type="radio" class="radio" name="ques5" value="option2">
-                <label for="option2"> 20 minutes </label><br>
+                <label for="option2"> Wait until it becomes urgent </label><br>
                 <input type="radio" class="radio" name="ques5" value="option3">
-                <label for="option3">What do you mean longest? I never stopped procrastinating</label>
+                <label for="option3">Immediately get to doing it or feel guilty about not doing it</label>
             </form> 
-        <p>6. What's the most creative excuse you've ever come up with for procrastinating?</p>
-        <form>
-            <input type="text" id="excuse" name="excuse">
-        </form>
+        <p>6. What's a common excuse you come up with for procrastinating?</p>
+        <form id="form6">
+            <input type="radio" class="radio" name="ques6" value="option1">
+            <label for="option1">I have so many ideas, I don't even know where to start.</label><br>
+            <input type="radio" class="radio" name="ques6" value="option2">
+            <label for="option2"> I'm not sure I'm ready to handle the consequences of my actions.</label><br>
+            <input type="radio" class="radio" name="ques6" value="option3">
+            <label for="option3">I don't want to do something just because it's expected of me.</label>
+            <input type="radio" class="radio" name="ques6" value="option3">
+            <label for="option4">I'll get it done eventually, but right now there's no urgency.</label>
+            <input type="radio" class="radio" name="ques6" value="option3">
+            <label for="option5">I'll just work harder and longer to make up for lost time.</label>
+            <input type="radio" class="radio" name="ques6" value="option3">
+            <label for="option6">If I can't do this perfectly, there's no point in doing it at all.</label>
+        </form> 
         <a href="#section05"> <span></span></a>
     </section>
     <section id="section05" class="scroll">
         <br><br><br>
         <p>7. If procrastination was a job, how skilled would you be at it ?</p>
-        <form>
+        <form id="form7">
             <input type="radio" class="radio" name="ques7" value="option1">
             <label for="option1">Most Skilled</label><br>
             <input type="radio" class="radio" name="ques7" value="option2">
@@ -79,8 +104,28 @@
             <label for="option3">Terrible</label>
         </form>
         <p>8. How do you make up for the time wasted in procrastinating?</p>
+        <form id="form8">
+            <input type="radio" class="radio" name="ques8" value="option1">
+            <label for="option1">Work fast under the pressure of a deadline</label><br>
+            <input type="radio" class="radio" name="ques8" value="option2">
+            <label for="option2"> Just Procrastinate more, no point in starting now </label><br>
+            <input type="radio" class="radio" name="ques8" value="option3">
+            <label for="option3">Over exert later on</label>
+        </form> 
         <a href="./result.html"> Result</a>
     </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let radios = document.querySelectorAll('.radio');
+            for (var i = 0; i < radios.length; i++) {
+                radios[i].addEventListener('change', function() {
+                    localStorage.setItem(this.name, this.value);
+                });
+            }
+        });
+    </script>
+
     <script src="main.js"></script>
 </body>
 </html>
