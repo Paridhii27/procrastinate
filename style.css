@@ -10,12 +10,6 @@
     font-weight: 100;
   }
 
- canvas{
-  left:calc(50%-200px);
-  top:calc(50vh-200px);
-  position:relative;
- } 
-
   h1{
     top: 20vh;
     font-family: 'Pangram Neue', Times;
@@ -62,6 +56,36 @@
     color: aqua;
   }
 
+  button {
+    font-family: 'Pangram Neue', Times;
+    font-style: italic;
+    color: white;
+    border-radius: 15px;
+    background-color: #628494;
+  }
+
+  input[type="radio"] {
+    /* Hide the default radio button */
+    opacity: 0.5;
+    position: relative;
+
+  }
+
+  input[type="radio"] + label {
+    /* Custom styling for the radio button */
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="radio"]:checked + label {
+    /* Styling for the checked radio button */
+    background-color: #65a4b5;
+    color: #fff;
+  }
+
   #home {
     width: 100vw;
     height : 100vh;
@@ -88,47 +112,9 @@
     color: #fff;
   }
 
-  input[type=text] {
-    font-family: 'Pangram Neue', Times;
-    font-size: medium;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-  }
-
-  input[type="radio"] {
-    /* Hide the default radio button */
-    opacity: 0;
-    position: absolute;
-  }
-
-  input[type="radio"] + label {
-    /* Custom styling for the radio button */
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  input[type="radio"]:checked + label {
-    /* Styling for the checked radio button */
-    background-color: #f00;
-    color: #fff;
-  }
-  
   form{
     margin: 20px auto;
     width: 50vw; 
-  }
-
-  button {
-    font-family: 'Pangram Neue', Times;
-    font-style: italic;
-    color: white;
-    border-radius: 15px;
-    background-color: #628494;
   }
 
   section {
@@ -138,7 +124,7 @@
   }
 
   section:after {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     content: '';
@@ -160,10 +146,11 @@
     letter-spacing: .1em;
     transition: opacity .3s;
   }
+
   .scroll a:hover {
     opacity: .5;
   }
-  
+
   section a {
     padding-top: 60px;
   }
@@ -205,3 +192,4 @@
       transform: rotate(-45deg) translate(0, 0);
     }
   }
+

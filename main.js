@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+
 	let radios1 = document.querySelectorAll('#form1 .radio');
     for (var i = 0; i < radios1.length; i++) {
         radios1[i].addEventListener('change', function() {
