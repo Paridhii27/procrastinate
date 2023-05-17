@@ -9,10 +9,7 @@
     src: url('./assets/PPNeueMachina-InktrapRegular.otf') format('opentype');
     font-weight: 100;
   }
- *{
-  border: 1px solid blue;
-  box-sizing: border-box;
- }
+  
   h1{
     top: 20vh;
     font-family: 'Pangram Neue', Times;
