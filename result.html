@@ -10,17 +10,65 @@
 </head>
 <body>
     <h1>[Result]</h1>
-    <img id="resultimg" src="assets/images/crisis.jpg">
-    <p>You are a worrier.</p>
-    <p>You are a dreamer.</p>
-    <P id="resulttext">You are a crisis-maker</P>
-    <p>You are a defier.</p>
-    <p>You are an overdoer.</p>
-    <p>You are a perfectionist.</p>
+    <img id="resultimg" src="">
+    <p id="resulttext"></p>
+    <!-- <p >You are a worrier.</p>
+    <p >You are a dreamer.</p>
+    <P >You are a crisis-maker</P>
+    <p >You are a defier.</p>
+    <p >You are an overdoer.</p>
+    <p >You are a perfectionist.</p> -->
     <br><br><br>
-    <p id="explanation">
+    <p id="resultexplanation">
        The crisis maker procrastination personality types are the people who have a tendancy to delay actions and complete tasks only when they are faced with a looming crisis or deadline. If you find yourself here ask yourself... are you postponing an important task because it hasn't gotten overwhelmingly close yet? 
     </p>
     <br>
 </body>
+<script>
+    var mainQues = localStorage.getItem("mainq");
+    var myChaos = localStorage.getItem("timeStorage");
+        
+        // Use the retrieved data
+        if (mainQues) {
+            console.log("main",mainQues); // Output: Hello, World!
+            switch (mainQues) {
+                case "option1":
+                    document.querySelector("#resultimg").src="assets/images/worrier.jpg"
+                    document.querySelector("#resulttext").innerHTML = "You are a worrier."
+                    document.querySelector("#resultexplanation").innerHTML = ""
+                    break;
+                case "option2":
+                    document.querySelector("#resultimg").src="assets/images/dreamer.jpg"
+                    document.querySelector("#resulttext").innerHTML = "You are a dreamer."
+                     document.querySelector("#resultexplanation").innerHTML = ""
+                    break;
+                case "option3":
+                    document.querySelector("#resultimg").src="assets/images/crisis.jpg"
+                    document.querySelector("#resulttext").innerHTML = "You are a crisis-maker"
+                     document.querySelector("#resultexplanation").innerHTML = ""
+                    break;
+                case "option4":
+                    document.querySelector("#resultimg").src="assets/images/defier.jpg"
+                    document.querySelector("#resulttext").innerHTML = "You are a defier."
+                     document.querySelector("#resultexplanation").innerHTML = ""
+                    break;
+                case "option5":
+                    document.querySelector("#resultimg").src="assets/images/overdoer.jpg"
+                    document.querySelector("#resulttext").innerHTML = "You are an overdoer."
+                     document.querySelector("#resultexplanation").innerHTML = ""
+                    break;
+                case "option6":
+                    document.querySelector("#resultimg").src="assets/images/perfectionist.jpg"
+                    document.querySelector("#resulttext").innerHTML = "You are a perfectionist."
+                     document.querySelector("#resultexplanation").innerHTML = ""
+                    break;
+            
+                default:
+                    break;
+            }
+        }
+        if (myChaos) {
+            console.log("time",myChaos)
+        }
+</script>
 </html>
