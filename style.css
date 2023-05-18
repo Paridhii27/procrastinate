@@ -110,11 +110,17 @@
 
   #resulttext{
     color: #fff;
-    margin-left: 65%;
+    margin-left: 20%;
   }
 
-  #explanation{
+  #resultexplanation{
     color: #fff;
+    margin-left: 20%;
+  }
+
+  #resultadvice{
+    color: #fff;
+    margin-left: 20%;
   }
 
   form{

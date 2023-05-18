@@ -18,15 +18,16 @@
     <p >You are a defier.</p>
     <p >You are an overdoer.</p>
     <p >You are a perfectionist.</p> -->
-    <br><br><br>
-    <p id="resultexplanation">
-       The crisis maker procrastination personality types are the people who have a tendancy to delay actions and complete tasks only when they are faced with a looming crisis or deadline. If you find yourself here ask yourself... are you postponing an important task because it hasn't gotten overwhelmingly close yet? 
-    </p>
-    <br>
+    <br><br>
+    <p id="resultexplanation"> </p>
+    <br><br>
+    <p id="resultadvice"> </p>
+    <br><br>
+
 </body>
 <script>
     var mainQues = localStorage.getItem("mainq");
-    var myChaos = localStorage.getItem("timeStorage");
+    var timeQues = localStorage.getItem("timeStorage");
         
         // Use the retrieved data
         if (mainQues) {
@@ -35,40 +36,53 @@
                 case "option1":
                     document.querySelector("#resultimg").src="assets/images/dreamer.jpg"
                     document.querySelector("#resulttext").innerHTML = "You are a dreamer."
-                    document.querySelector("#resultexplanation").innerHTML = ""
+                    document.querySelector("#resultexplanation").innerHTML = "The community of dreamer procrastinators is one where everyone is lost in thought, everyone is fantasizing about things they want to accomplish. Where to begin? "
                     break;
                 case "option2":
                     document.querySelector("#resultimg").src="assets/images/worrier.jpg"
                     document.querySelector("#resulttext").innerHTML = "You are a worrier."
-                     document.querySelector("#resultexplanation").innerHTML = ""
+                    document.querySelector("#resultexplanation").innerHTML = "Do you find yourself worrying about the possibilities and outcomes? Do you worry about making tough decisions? Do you worry about other people's opinions alot? If you found a piece of youself in any of these descriptions or questions then you are part of the worrier procrastinator community."
                     break;
                 case "option3":
                     document.querySelector("#resultimg").src="assets/images/defier.jpg"
                     document.querySelector("#resulttext").innerHTML = "You are a defier"
-                     document.querySelector("#resultexplanation").innerHTML = ""
+                    document.querySelector("#resultexplanation").innerHTML = "Are the boundaries of the world suffocating sometimes? Are you always trying to break free from these bounds and mark out your own future? Do what you need to do but if you get lost along the way don't be afraid from reaching out to the defiers alliance."
                     break;
                 case "option4":
                     document.querySelector("#resultimg").src="assets/images/crisis.jpg"
                     document.querySelector("#resulttext").innerHTML = "You are a crisis-maker."
-                     document.querySelector("#resultexplanation").innerHTML = ""
+                    document.querySelector("#resultexplanation").innerHTML = "The crisis maker procrastination personality types are the people who have a tendancy to delay actions and complete tasks only when they are faced with a looming crisis or deadline. If you find yourself here ask yourself... are you postponing an important task because it hasn't gotten overwhelmingly close yet?"
                     break;
                 case "option5":
                     document.querySelector("#resultimg").src="assets/images/overdoer.jpg"
                     document.querySelector("#resulttext").innerHTML = "You are an overdoer."
-                     document.querySelector("#resultexplanation").innerHTML = ""
+                    document.querySelector("#resultexplanation").innerHTML = "Overdoers. They are everywhere. Taking over every task known to humanity because they feel like they need to do it. However in the process of it all sometimes it gets so overwhelming...do you ever feel this sense of overwhelming when you're trying to do everything at once and nothing is working? Welcome to the overdoer procrastination club. "
                     break;
                 case "option6":
                     document.querySelector("#resultimg").src="assets/images/perfectionist.jpg"
                     document.querySelector("#resulttext").innerHTML = "You are a perfectionist."
-                     document.querySelector("#resultexplanation").innerHTML = ""
+                    document.querySelector("#resultexplanation").innerHTML = "Do you often find yourself setting standards that are too high to achieve? Do you often find yourself crumbling under the pressure of your own perfectionist tendancies? If you answered yes to the previous questions then you're part of the perfectionist procrastinator group. Try to let go of what's holding you back today. "
                     break;
             
                 default:
                     break;
             }
         }
-        if (myChaos) {
-            console.log("time",myChaos)
+        if (timeQues) {
+            console.log("time",timeQues)
+            switch (timeQues) {
+                case "option1":
+                    document.querySelector("#resultadvice").innerHTML = "Try to understand the root cause of what's making you procrastinate so much. Prioritize what you need to be doing first."
+                    break;
+                case "option2":
+                    document.querySelector("#resultadvice").innerHTML = "Observe what makes you procrastinate. Hold yourself accountable when you sense your procrastination taking over."
+                    break;
+                case "option3":
+                    document.querySelector("#resultadvice").innerHTML = "You're on the right path but are you sure you never procrastinate because you just spent so much time taking this quiz???"
+                    break;
+                default:
+                    break;
+            }
         }
 </script>
 </html>
